@@ -66,3 +66,4 @@ export function getTier(score) {
   if (score >= 25) return "Medium";
   return "Low";
 }
+];
