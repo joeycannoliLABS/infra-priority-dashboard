@@ -13,10 +13,10 @@ export const DATA_META = {
   totalActive: 47,
   statuses: ["In Progress (21)", "New (13)", "OnHold (9)", "To Do (2)", "Blocked (2)"],
   changeLog: [
-    { type: "removed", text: "19 items cleared: 12 Done (BlockFetcher, Debug nodes, MarbleRun, Grafana traces, SETTL, Rewards Referrals, etc.), 4 Cancelled (Balance Service, Notification Center, Price alerts, Redundancy), 3 others" },
-    { type: "status", text: "Gas Relayer rewrite OnHold → In Progress, DevNet for AvaCloud New → Blocked" },
-    { type: "data", text: "New columns: Q3 2026 plan + Q3 2026 actuals — now factored into scoring" },
-    { type: "data", text: "Strategy: 23 Yes / 23 No / 1 blank. Net: 67 → 47 active." },
+    { type: "removed", text: "19 items cleared: 12 Done, 4 Cancelled, 3 others" },
+    { type: "status", text: "Gas Relayer rewrite OnHold to In Progress, DevNet for AvaCloud New to Blocked" },
+    { type: "data", text: "New columns: Q3 2026 plan + Q3 2026 actuals now factored into scoring" },
+    { type: "data", text: "Strategy: 23 Yes / 23 No / 1 blank. Net: 67 to 47 active." },
   ],
 };
 
