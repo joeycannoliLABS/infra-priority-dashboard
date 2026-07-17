@@ -820,4 +820,4 @@ export const INITIATIVES = [
     "Q2 2026 plan": "X",
     "Q3 2026 plan": "X"
   }
-];\n
+];
