@@ -11,7 +11,8 @@ export function scoreInitiative(item) {
   if (item["OKR"]) strategic += 35;
   const statusBonus = { "In Progress": 15, "To Do": 10, "New": 5, "Blocked": 8, "OnHold": 0 };
   strategic += statusBonus[item["Status"]] || 0;
-  if (item["Q1 2026 plan"] && item["Q1 2026 plan"] !== "0") strategic += 10;
+  if (item["Q1 2026 plan"] && item["Q1 2026 plan"] !== "0") strategic += 5;
+  if (item["Q3 2026 plan"] && item["Q3 2026 plan"] !== "0") strategic += 10;
 
   // RISK & COMPLIANCE (0-100)
   const combined = ((item["MotherEPIC"] || "") + " " + (item["Roadmap item"] || "")).toLowerCase();
@@ -47,7 +48,8 @@ export function scoreInitiative(item) {
   else if (item["Status"] === "To Do") efficiency += 20;
   else if (item["Status"] === "New") efficiency += 15;
   if (!item["Dependency"]) efficiency += 15;
-  if (item["Q1 2026 plan"] && item["Q1 2026 plan"] !== "0") efficiency += 20;
+  if (item["Q1 2026 plan"] && item["Q1 2026 plan"] !== "0") efficiency += 10;
+  if (item["Q3 2026 plan"] && item["Q3 2026 plan"] !== "0") efficiency += 15;
   efficiency = Math.min(efficiency, 100);
 
   return { strategic, risk, value, efficiency };
