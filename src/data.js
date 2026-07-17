@@ -1,5 +1,5 @@
 // ============================================================
-// INITIATIVE DATA — Updated July 2026
+// INITIATIVE DATA — Updated July 17, 2026
 // 
 // MONTHLY UPDATE INSTRUCTIONS:
 // 1. Upload the new Shared_services spreadsheet to Claude
@@ -9,15 +9,14 @@
 // ============================================================
 
 export const DATA_META = {
-  updatedDate: "July 1, 2026",
-  totalActive: 67,
-  statuses: ["In Progress (32)", "New (17)", "OnHold (14)", "To Do (3)", "Blocked (1)"],
+  updatedDate: "July 17, 2026",
+  totalActive: 47,
+  statuses: ["In Progress (21)", "New (13)", "OnHold (9)", "To Do (2)", "Blocked (2)"],
   changeLog: [
-    { type: "added", text: "Storm AppSet migration, Storm isolated repositories for L1 management" },
-    { type: "removed", text: "Async execution, AvaCloud core network migration, Custom tagging, Gateway API migration (Traefik), Release Management (STORM), Storm AppSet refactor (PoC)" },
-    { type: "status", text: "erpc integration moved New → In Progress" },
-    { type: "priority", text: "Storm Technical Debt assigned priority 1" },
-    { type: "data", text: "9 strategy updates: 4 newly aligned (LATAM, Custody onboarding, Gas Relayer, DHE Privacy), 5 marked No. Now 31 Yes / 35 No / 1 blank." },
+    { type: "removed", text: "19 items cleared: 12 Done (BlockFetcher, Debug nodes, MarbleRun, Grafana traces, SETTL, Rewards Referrals, etc.), 4 Cancelled (Balance Service, Notification Center, Price alerts, Redundancy), 3 others" },
+    { type: "status", text: "Gas Relayer rewrite OnHold → In Progress, DevNet for AvaCloud New → Blocked" },
+    { type: "data", text: "New columns: Q3 2026 plan + Q3 2026 actuals — now factored into scoring" },
+    { type: "data", text: "Strategy: 23 Yes / 23 No / 1 blank. Net: 67 → 47 active." },
   ],
 };
 
@@ -36,23 +35,8 @@ export const INITIATIVES = [
     "Main Team": "STORM",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Core - new functionality",
-    "Roadmap item": "Blockaid scam token integration (Non-Glacier)",
-    "Business Value/Purpose": "Integration with BlockAid scam token endpoint for non-Glacier networks",
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": "INFRA-25O4KR2",
-    "Status": "OnHold",
-    "Priority ": 2.0,
-    "LoB": "Core",
-    "Estimated Effort (FTE Weeks)": 1.0,
-    "Classification": "Request",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Technical improvement",
@@ -68,7 +52,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Cost Optimisation",
@@ -84,7 +69,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Cost Optimization",
@@ -100,7 +86,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": "Enterprise Support",
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Maintenance",
@@ -116,23 +103,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "4",
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Dedicated nodes behind API gateway",
-    "Roadmap item": "Payments product  (SETTL network)",
-    "Business Value/Purpose": "AC need to be able to deploy new type of VM if STORM supports that",
-    "2026 AVL Strategy Aligned": "Yes",
-    "OKR": "AC-25O4KR4",
-    "Status": "In Progress",
-    "Priority ": 0.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Request",
-    "Main Team": "Solution Architecture",
-    "Dependency": null,
-    "Q1 2026 plan": "1",
-    "Q2 2026 plan": "14"
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Avacloud - new functionality",
@@ -148,7 +120,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Security Compliance",
@@ -164,23 +137,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Core - new functionality",
-    "Roadmap item": "Balance Service",
-    "Business Value/Purpose": "Creation of Balance service for all of Core to use",
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": "INFRA-25O4KR2",
-    "Status": "In Progress",
-    "Priority ": 2.0,
-    "LoB": "Core",
-    "Estimated Effort (FTE Weeks)": 3.0,
-    "Classification": "Request",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Avacloud - new functionality",
@@ -196,7 +154,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Security Engineering",
@@ -212,7 +171,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Avacloud - new functionality",
@@ -228,7 +188,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Custody - new functionality",
@@ -244,7 +205,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Technical improvementt - cost reduction",
@@ -260,7 +222,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "4",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Custody - new functionality",
@@ -276,7 +239,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Maintenance",
@@ -292,7 +256,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "5",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": null,
@@ -308,7 +273,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": "0",
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "API Gateway",
@@ -324,7 +290,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": "4",
-    "Q2 2026 plan": "0"
+    "Q2 2026 plan": "0",
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Maintenance",
@@ -340,7 +307,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "0",
-    "Q2 2026 plan": "2"
+    "Q2 2026 plan": "2",
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Maintenance",
@@ -356,23 +324,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "15",
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "AvaCloud indexer (New architecture)",
-    "Roadmap item": "Debug nodes migration to OCI and AvaCloud ownership",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "Yes",
-    "OKR": null,
-    "Status": "In Progress",
-    "Priority ": 1.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Request",
-    "Main Team": "Solution Architecture",
-    "Dependency": null,
-    "Q1 2026 plan": "1",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Technical improvementt - cost reduction",
@@ -388,7 +341,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": "4",
-    "Q2 2026 plan": "6"
+    "Q2 2026 plan": "6",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Technical improvementt - cost reduction",
@@ -404,7 +358,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "0",
-    "Q2 2026 plan": "2"
+    "Q2 2026 plan": "2",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Maintenance",
@@ -420,87 +375,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "0",
-    "Q2 2026 plan": "2"
-  },
-  {
-    "MotherEPIC": "Core - new functionality",
-    "Roadmap item": "Notification Center API ",
-    "Business Value/Purpose": "Creation of an API to power mobile notifcation center",
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": "INFRA-25O4KR2",
-    "Status": "In Progress",
-    "Priority ": 1.0,
-    "LoB": "Core",
-    "Estimated Effort (FTE Weeks)": 1.0,
-    "Classification": "Request",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": "1",
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Core - new functionality",
-    "Roadmap item": "Price alert push notification (Project Fusion: token list and network list)",
-    "Business Value/Purpose": "Significant, price level, percentage change confugrable price alerts for mobile weatchlist",
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": "INFRA-25O4KR2",
-    "Status": "In Progress",
-    "Priority ": 1.0,
-    "LoB": "Core",
-    "Estimated Effort (FTE Weeks)": 1.0,
-    "Classification": "Request",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": "1",
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Technical improvementt - cost reduction",
-    "Roadmap item": "OCI migration for AvaCloud L1s (subnet-testnet)",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "Yes",
-    "OKR": null,
-    "Status": "New",
-    "Priority ": 0.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Maintenance",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": null,
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Technical improvementt - cost reduction",
-    "Roadmap item": "GCP footprint reduction: GCP to OCI migration ",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "Yes",
-    "OKR": null,
-    "Status": "New",
-    "Priority ": 5.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Maintenance",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": null,
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Technical improvementt - cost reduction",
-    "Roadmap item": "OCI migration for AvaCloud L1s (subnet-testnet)",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "Yes",
-    "OKR": null,
-    "Status": "In Progress",
-    "Priority ": 0.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 4.0,
-    "Classification": "Maintenance",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": "4",
-    "Q2 2026 plan": "X"
+    "Q2 2026 plan": "2",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Technical improvementt - cost reduction",
@@ -516,7 +392,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "2",
-    "Q2 2026 plan": "X"
+    "Q2 2026 plan": "X",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Technical improvement - quality",
@@ -532,7 +409,8 @@ export const INITIATIVES = [
     "Main Team": "STORM",
     "Dependency": null,
     "Q1 2026 plan": "4",
-    "Q2 2026 plan": "0"
+    "Q2 2026 plan": "0",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Maintenance",
@@ -548,23 +426,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "2",
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Avacloud - new functionality",
-    "Roadmap item": "L1's Grafana dashboard-alerts deployment/removal via Storm",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "Yes",
-    "OKR": null,
-    "Status": "In Progress",
-    "Priority ": 2.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Request",
-    "Main Team": "STORM",
-    "Dependency": null,
-    "Q1 2026 plan": "2",
-    "Q2 2026 plan": "6"
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Technical improvement - quality",
@@ -580,7 +443,8 @@ export const INITIATIVES = [
     "Main Team": "STORM",
     "Dependency": null,
     "Q1 2026 plan": "2",
-    "Q2 2026 plan": "2"
+    "Q2 2026 plan": "2",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Security Compliance",
@@ -596,7 +460,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Security Compliance",
@@ -612,39 +477,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "2",
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Core - technical improvements",
-    "Roadmap item": "Redundancy and scaling improvements",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": null,
-    "Status": "To Do",
-    "Priority ": 2.0,
-    "LoB": "Core",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Maintenance",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": "4",
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Avacloud - new functionality",
-    "Roadmap item": "Cubist-signer (in coop with PEG)",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": null,
-    "Status": "OnHold",
-    "Priority ": 3.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 4.0,
-    "Classification": "Request",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": "0",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Security Compliance",
@@ -660,23 +494,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "0",
-    "Q2 2026 plan": "2"
-  },
-  {
-    "MotherEPIC": "Core - technical improvements",
-    "Roadmap item": "Monitoring and logging: grafana improvement traces - baila loses context constantly",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "Yes",
-    "OKR": null,
-    "Status": "In Progress",
-    "Priority ": 2.0,
-    "LoB": "Core",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Request",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": "2",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": "2",
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Core - technical improvements",
@@ -692,7 +511,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "1",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Technical improvement - quality",
@@ -708,39 +528,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "4"
-  },
-  {
-    "MotherEPIC": "Avacloud - new functionality",
-    "Roadmap item": "L1s with Custom precompiles",
-    "Business Value/Purpose": "New product of custom L1s with custom precompiles, fucntionlaity (end of Q4)",
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": null,
-    "Status": "OnHold",
-    "Priority ": 3.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Request",
-    "Main Team": "Solution Architecture",
-    "Dependency": null,
-    "Q1 2026 plan": "1",
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Maintenance",
-    "Roadmap item": "MarbleRun Upgrade",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": null,
-    "Status": "In Progress",
-    "Priority ": 0.0,
-    "LoB": "Custody",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Request",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": null,
-    "Q2 2026 plan": "X"
+    "Q2 2026 plan": "4",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Avacloud - new functionality",
@@ -748,7 +537,7 @@ export const INITIATIVES = [
     "Business Value/Purpose": null,
     "2026 AVL Strategy Aligned": "No",
     "OKR": null,
-    "Status": "New",
+    "Status": "Blocked",
     "Priority ": 1.0,
     "LoB": "AvaCloud",
     "Estimated Effort (FTE Weeks)": null,
@@ -756,23 +545,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "6"
-  },
-  {
-    "MotherEPIC": "Avacloud - new functionality",
-    "Roadmap item": "Developer RPC secure access (JWT) token",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": null,
-    "Status": "In Progress",
-    "Priority ": 1.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": null,
-    "Classification": "Request",
-    "Main Team": "Solution Architecture",
-    "Dependency": null,
-    "Q1 2026 plan": null,
-    "Q2 2026 plan": "X"
+    "Q2 2026 plan": "6",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Maintenance",
@@ -788,7 +562,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "2",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": null,
@@ -804,7 +579,8 @@ export const INITIATIVES = [
     "Main Team": "FinOps",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "1"
+    "Q2 2026 plan": "1",
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Technical improvement - quality",
@@ -820,7 +596,8 @@ export const INITIATIVES = [
     "Main Team": "STORM",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "6"
+    "Q2 2026 plan": "6",
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Technical improvement - quality",
@@ -836,7 +613,8 @@ export const INITIATIVES = [
     "Main Team": "STORM",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "6"
+    "Q2 2026 plan": "6",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Technical improvement - quality",
@@ -852,23 +630,8 @@ export const INITIATIVES = [
     "Main Team": "STORM",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "4"
-  },
-  {
-    "MotherEPIC": "AvaCloud indexer (New architecture)",
-    "Roadmap item": "BlockFetcher, Block Subscriber deployment via STORM (ConsumerIndexer)",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "Yes",
-    "OKR": null,
-    "Status": "In Progress",
-    "Priority ": 1.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Request",
-    "Main Team": "STORM",
-    "Dependency": null,
-    "Q1 2026 plan": null,
-    "Q2 2026 plan": "8"
+    "Q2 2026 plan": "4",
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Custody - new functionality",
@@ -884,7 +647,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "XL"
+    "Q2 2026 plan": "XL",
+    "Q3 2026 plan": "XL"
   },
   {
     "MotherEPIC": "Generalized Region support for AvaCloud",
@@ -892,7 +656,7 @@ export const INITIATIVES = [
     "Business Value/Purpose": " Aimed at better scaling, supportability (Go Lang), and cost reduction.",
     "2026 AVL Strategy Aligned": "Yes",
     "OKR": "AC-25O1KR1",
-    "Status": "OnHold",
+    "Status": "In Progress",
     "Priority ": 6.0,
     "LoB": "AvaCloud",
     "Estimated Effort (FTE Weeks)": 0.0,
@@ -900,23 +664,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": "0",
-    "Q2 2026 plan": null
-  },
-  {
-    "MotherEPIC": "Client request [AvaCloud]",
-    "Roadmap item": "Node white-listing via STORM [Not STORM]",
-    "Business Value/Purpose": "Nice to have, the amount of scope is not there yet. Demanded from Avacloud/Will. Define the scope and plan later in Q4.",
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": null,
-    "Status": "OnHold",
-    "Priority ": 99.0,
-    "LoB": "AvaCloud",
-    "Estimated Effort (FTE Weeks)": 4.0,
-    "Classification": "Request",
-    "Main Team": "Solution Architecture",
-    "Dependency": null,
-    "Q1 2026 plan": "0",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": "4"
   },
   {
     "MotherEPIC": "Security Engineering",
@@ -932,7 +681,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": "2",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Custody - new functionality",
@@ -948,23 +698,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "X"
-  },
-  {
-    "MotherEPIC": "Core - new functionality",
-    "Roadmap item": "Rewards: Referrals",
-    "Business Value/Purpose": "Area within Core where users can generate and then share a referral code to earn rewards if they sign up transacting users",
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": null,
-    "Status": "In Progress",
-    "Priority ": 5.0,
-    "LoB": "Core",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Request",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": "1",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": "X",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Maintenance",
@@ -980,23 +715,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "X"
-  },
-  {
-    "MotherEPIC": "Maintenance",
-    "Roadmap item": "Q2 2026 Custody Operational Support (Certifications inlcuded)",
-    "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "No",
-    "OKR": null,
-    "Status": "New",
-    "Priority ": 0.0,
-    "LoB": "Custody",
-    "Estimated Effort (FTE Weeks)": 0.0,
-    "Classification": "Request",
-    "Main Team": "SRE",
-    "Dependency": null,
-    "Q1 2026 plan": null,
-    "Q2 2026 plan": "X"
+    "Q2 2026 plan": "X",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Technical improvementt - cost reduction",
@@ -1012,7 +732,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Custody - new functionality",
@@ -1028,7 +749,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "0"
+    "Q2 2026 plan": "0",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Custody - new functionality",
@@ -1044,7 +766,8 @@ export const INITIATIVES = [
     "Main Team": "Solution Architecture",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "0"
+    "Q2 2026 plan": "0",
+    "Q3 2026 plan": "X"
   },
   {
     "MotherEPIC": "Core - technical improvements",
@@ -1060,7 +783,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": "1",
-    "Q2 2026 plan": null
+    "Q2 2026 plan": null,
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Maintenance",
@@ -1076,7 +800,8 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "X"
+    "Q2 2026 plan": "12",
+    "Q3 2026 plan": null
   },
   {
     "MotherEPIC": "Technical improvementt - cost reduction",
@@ -1092,6 +817,7 @@ export const INITIATIVES = [
     "Main Team": "SRE",
     "Dependency": null,
     "Q1 2026 plan": null,
-    "Q2 2026 plan": "X"
+    "Q2 2026 plan": "X",
+    "Q3 2026 plan": "X"
   }
-];
+];\n
