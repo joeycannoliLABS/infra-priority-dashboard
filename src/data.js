@@ -1,9 +1,9 @@
 // ============================================================
-// INITIATIVE DATA — Updated August 2026 (strategy flags filled in)
+// INITIATIVE DATA — Updated August 2026 (consistency fixes)
 //
 // MONTHLY UPDATE INSTRUCTIONS:
-// 1. Upload the new Shared_services spreadsheet to Claude
-// 2. Ask Claude to regenerate this file
+// 1. Upload the new Shared_services spreadsheet + tools/strategy_decisions.json to Claude
+// 2. Ask Claude to regenerate this file and run the consistency check
 // 3. Replace this file in src/data.js
 // 4. Commit -> Vercel auto-deploys
 // ============================================================
@@ -12,9 +12,9 @@ export const DATA_META = {
   updatedDate: "August 2026",
   totalActive: 62,
   changeLog: [
-    { type: "data", text: "Strategy Aligned flag filled in for 17 items: 5 Yes (Custody Licensed Software PoC, Terraform Providers Upgrade, AvaCloud indexer infra, SETTL enablement, AvaCloud ip-restriction), 12 No" },
-    { type: "data", text: "Strategy now 25 Yes / 29 No / 8 blank. Blank items keep the default 10 pts until filled in" },
-    { type: "data", text: "No other changes: same 62 active items, statuses, and priorities as the previous August run" },
+    { type: "data", text: "Consistency fixes: Q3 2026 Custody Operational Support and FinOps Management Q3-2026 changed No to Yes to match earlier quarters" },
+    { type: "data", text: "Operational Support/On-call confirmed as No for all quarters" },
+    { type: "data", text: "Strategy now 27 Yes / 27 No / 8 blank. No other changes" },
   ],
 };
 
@@ -686,7 +686,7 @@ export const INITIATIVES = [
     "MotherEPIC": null,
     "Roadmap item": "FinOps Management Q3-2026",
     "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "No",
+    "2026 AVL Strategy Aligned": "Yes",
     "OKR": null,
     "Status": "In Progress",
     "Priority ": "Medium",
@@ -822,7 +822,7 @@ export const INITIATIVES = [
     "MotherEPIC": null,
     "Roadmap item": "Q3 2026 Custody Operational Support (Misc. requests)",
     "Business Value/Purpose": null,
-    "2026 AVL Strategy Aligned": "No",
+    "2026 AVL Strategy Aligned": "Yes",
     "OKR": null,
     "Status": "In Progress",
     "Priority ": "Highest",
