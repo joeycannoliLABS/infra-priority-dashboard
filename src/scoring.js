@@ -1,6 +1,18 @@
 export const DEFAULT_WEIGHTS = { strategic: 30, risk: 25, value: 25, efficiency: 20 };
 
-export function scoreInitiative(item) {
+// Normalize Jira-style values so they score the same as the original spreadsheet values
+const STATUS_MAP = { "Review / Testing": "In Progress", "Selected for Development": "To Do", "Backlog": "New" };
+const PRIORITY_MAP = { "Highest": 0, "High": 1, "Medium": 2, "Low": 3, "Lowest": 4 };
+
+function normalize(item) {
+  const status = STATUS_MAP[item["Status"]] || item["Status"];
+  let pri = item["Priority "];
+  if (typeof pri === "string") pri = PRIORITY_MAP[pri] ?? null;
+  return { ...item, Status: status, "Priority ": pri };
+}
+
+export function scoreInitiative(raw) {
+  const item = normalize(raw);
   let strategic = 0, risk = 0, value = 0, efficiency = 0;
 
   if (item["2026 AVL Strategy Aligned"] === "Yes") strategic += 40;
@@ -25,7 +37,7 @@ export function scoreInitiative(item) {
 
   if (item["Business Value/Purpose"]) value += 20;
   if (item["OKR"]) value += 25;
-  if (["AvaCloud", "Core", "Custody", "PEG", "Foundation"].includes(item["LoB"] || "")) value += 25;
+  if (["AvaCloud", "Core", "Custody", "PEG", "Foundation", "SETTL"].includes(item["LoB"] || "")) value += 25;
   if (item["Classification"] === "Request") value += 15;
   if (combined.includes("cost") || combined.includes("optimization") || combined.includes("right-sizing") || combined.includes("grafana") || combined.includes("prometheus")) value += 15;
   if (combined.includes("new functionality") || combined.includes("new product")) value += 10;
